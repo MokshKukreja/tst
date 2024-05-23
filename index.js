@@ -1,15 +1,15 @@
 const express = require('express')
 const app = express()
 const port = 8000
-// const mongoose = require("mongoose")
+const mongoose = require("mongoose")
 // const transactionRouter = require('./routes/transactionRoutes')
 // const userRouter = require('./routes/userRoutes')
-
+const cors = require("cors")
 
 app.use(express.json())
 
 
-// app.use(cors())
+app.use(cors())
 
 
 
