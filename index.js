@@ -2,8 +2,8 @@ const express = require('express')
 const app = express()
 const port = 8000
 // const mongoose = require("mongoose")
-const transactionRouter = require('./routes/transactionRoutes')
-const userRouter = require('./routes/userRoutes')
+// const transactionRouter = require('./routes/transactionRoutes')
+// const userRouter = require('./routes/userRoutes')
 
 
 app.use(express.json())
@@ -13,8 +13,8 @@ app.use(express.json())
 
 
 
-app.use("/transactions",transactionRouter)
-app.use("/users",userRouter)
+// app.use("/transactions",transactionRouter)
+// app.use("/users",userRouter)
 
 // mongoose.connect("mongodb+srv://mokshkukreja999:moksh90@cluster0.frzozja.mongodb.net/expense?retryWrites=true&w=majority&appName=Cluster0", () => {
 //     console.log("Connected successfully");
