@@ -1,23 +1,18 @@
 const express = require('express')
 const app = express()
 const port = 8000
-const mongoose = require("mongoose")
-const cors = require("cors")
+// const mongoose = require("mongoose")
 const transactionRouter = require('./routes/transactionRoutes')
 const userRouter = require('./routes/userRoutes')
-require('dotenv').config();
 
 
 app.use(express.json())
 
 
-app.use(cors())
+// app.use(cors())
 
 
-app.use((req,res,next)=>{
-    console.log("HTTPS Method" + req.method + " , URL" +req.url)
-    next();
-})
+
 app.use("/transactions",transactionRouter)
 app.use("/users",userRouter)
 
